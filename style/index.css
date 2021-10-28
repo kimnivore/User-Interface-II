@@ -33,20 +33,22 @@ footer, header, hgroup, menu, nav, section {
 	padding: 0;
 	margin: 0;
 	max-width: 100%;
+	border: 1px solid red;
 }
 html{
 	font-size: 62.5%;
 }
+
 body {
 	font-size: 1.8rem;
 	line-height: 1.5;
 	color: #4f4f4f;
-	background-color: rgb(184, 217, 248);
+	background-color: white;
 	font-family: 'Zen Kaku Gothic Antique', sans-serif;
-	border: 1px solid red;
+	
 }
 h1 {
-	font-size: 6rem;
+	font-size: 5rem;
 }
 
 h2 {
@@ -57,17 +59,19 @@ h3 {
 }
 a {
 	text-decoration: none;
+	color: black;
 }
 
 button {
-	font-size: 1.8rem;
-	padding: 2% 1%;
-	margin: 4%;
-	background-color: paleturquoise
+	font-size: 1.5rem;
+	padding: 1% 1%;
+	background-color: white;
+	border: black 1px solid;
+
 }
-section, footer {
-	padding: 4% 0;
-}
+/* section, footer {
+	padding: 0;
+} */
 
 .image {
 	background-repeat: no-repeat;
@@ -76,11 +80,41 @@ section, footer {
 }
 
 nav{
-	display: flex
+	background-color: lightgray;
+}
+
+nav .links {
+	display: flex;
 	justify-content: flex-start;
-	position: fixed;
-	width: 100%;
+	width: 100%;	
 	top: 0;
 	z-index: 999;
-	background-color: cyan;
+	background-color: lightgray;
+	padding-bottom: 2%;
+	padding-left: 2%
 }
+
+#about {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 40vh;
+}
+/* .left {
+	justify-self: flex-start;
+} */
+.right {
+	width: 50%;
+	margin-left: 10%;
+	text-align: left;
+	/* padding: 2% 4%; */
+}
+
+.right button {
+	margin: 5% 0;
+}
+/* .image {
+	height: vh;
+	background-image: url('images/1.jpeg');
+	display: flex;
+} */
