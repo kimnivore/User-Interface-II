@@ -66,13 +66,14 @@ a {
 button {
 	font-size: 1.5rem;
 	padding: 1% 1%;
-	background-color: white;
+	background-color: rgb(173, 190, 212);
 	border: black 1px solid;
-
 }
-/* section, footer {
-	padding: 0;
-} */
+
+button:hover{
+	background-color: rgb(105, 140, 160);
+	font-weight: bold;
+}
 
 .image {
 	background-repeat: no-repeat;
@@ -95,6 +96,8 @@ nav .links {
 	padding-left: 2%
 }
 
+
+
 #about {
 	display: flex;
 	justify-content: flex-start;
@@ -111,17 +114,28 @@ nav .links {
 
 .right button {
 	margin: 5% 0;
-	padding: 2% 2%;
+	padding: 2%;
 }
-/* .image {
-	height: vh;
-	background-image: url('images/1.jpeg');
-	display: flex;
-} */
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: lightgray;
+	margin: 2%;
+	padding: 2%;
+}
+
+.footer button {
+	margin-top: 2%;
+	padding: 2% 3%;
 }
