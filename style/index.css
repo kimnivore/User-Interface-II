@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,22 +26,23 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 *{
 	box-sizing:border-box;
 	padding: 0;
 	margin: 0;
 	max-width: 100%;
+	border: red 1px solid;
+	/* border: red 1px solid; */
 }
 html{
 	font-size: 62.5%;
 }
-
 body {
 	font-size: 1.8rem;
 	line-height: 1.5;
 	color: #4f4f4f;
 	background-color: white;
+	background-color: #fff;
 	font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 h1 {
@@ -55,9 +55,14 @@ h2 {
 h3 {
 	font-size: 2rem;
 }
+p {
+	font-size: 1.8rem;
+}
 a {
 	text-decoration: none;
 	color: black;
+	color: #4f4f4f;
+	font-size: 2rem;
 }
 
 button {
@@ -66,23 +71,19 @@ button {
 	background-color: rgb(173, 190, 212);
 	border: black 1px solid;
 }
-
 button:hover{
 	background-color: rgb(105, 140, 160);
 	font-weight: bold;
 }
-
 .image {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
-
 nav{
 	background-color: lightgray;
 	padding: 2%;
 }
-
 nav .links {
 	display: flex;
 	justify-content: flex-start;
@@ -92,7 +93,6 @@ nav .links {
 	padding-bottom: 2%;
 	padding-left: 2%
 }
-
 #about {
 	display: flex;
 	justify-content: flex-start;
@@ -101,23 +101,21 @@ nav .links {
 	margin-left: 1%;
 	width: 100%;
 }
-
 .right {
 	width: 50%;
 	margin-left: 10%;
 	text-align: left;
 }
-
 .right button {
 	margin: 5% 0;
 	padding: 2%;
 }
-
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
+	width: 100%;
 }
 
 .footer {
@@ -130,20 +128,29 @@ nav .links {
 	margin: 2%;
 	padding: 2%;
 }
-
 .footer button {
 	margin-top: 2%;
 	padding: 2% 3%;
 }
-
 /* media queries */
 
 @media (max-width: 800px) {
 
-	
+
+	nav{
+		margin-bottom: 10%;
+	}
+	.container {
+		margin-top: 10%;
+	}
+	.image {
+		padding: 0.25%;
+	}
 }
 
 @media (max-width: 500px) {
 
 
-}
+
+
+} 
