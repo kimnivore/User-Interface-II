@@ -31,8 +31,6 @@ footer, header, hgroup, menu, nav, section {
 	padding: 0;
 	margin: 0;
 	max-width: 100%;
-	border: red 1px solid;
-	/* border: red 1px solid; */
 }
 html{
 	font-size: 62.5%;
@@ -48,7 +46,6 @@ body {
 h1 {
 	font-size: 5rem;
 }
-
 h2 {
 	font-size: 3rem;
 }
@@ -64,14 +61,14 @@ a {
 	color: #4f4f4f;
 	font-size: 2rem;
 }
-
-button {
+.links button {
 	font-size: 1.5rem;
+	width: 10%;
 	padding: 1% 1%;
 	background-color: rgb(173, 190, 212);
 	border: black 1px solid;
 }
-button:hover{
+.links button:hover{
 	background-color: rgb(105, 140, 160);
 	font-weight: bold;
 }
@@ -117,7 +114,6 @@ nav .links {
 	text-align: center;
 	width: 100%;
 }
-
 .footer {
 	display: flex;
 	flex-direction: column;
@@ -133,10 +129,7 @@ nav .links {
 	padding: 2% 3%;
 }
 /* media queries */
-
 @media (max-width: 800px) {
-
-
 	nav{
 		margin-bottom: 10%;
 	}
@@ -147,10 +140,39 @@ nav .links {
 		padding: 0.25%;
 	}
 }
-
 @media (max-width: 500px) {
-
-
-
-
+	nav {
+		background-color: #fff;
+		margin-bottom: 1%;
+	}
+	nav h1{
+		text-align: center;
+		margin-bottom: 1%;
+	}
+	nav .links{
+		flex-direction: column;
+		justify-content: center;
+		width: 30%;
+		margin: auto;
+	}
+	.links button {
+		margin: 1% 0;
+		padding: 6%;
+		width: 80%;
+	}
+	#about{
+		flex-direction: column;
+		margin-bottom: 45%;
+	
+	#about .right{
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	.right button{
+		margin: 2%
+	}
+	.container .image {
+		margin: 5% 0;
+	}
 } 
