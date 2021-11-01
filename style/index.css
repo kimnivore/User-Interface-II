@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,7 +26,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 *{
 	box-sizing:border-box;
 	padding: 0;
@@ -37,52 +35,52 @@ footer, header, hgroup, menu, nav, section {
 html{
 	font-size: 62.5%;
 }
-
 body {
 	font-size: 1.8rem;
 	line-height: 1.5;
 	color: #4f4f4f;
 	background-color: white;
+	background-color: #fff;
 	font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 h1 {
 	font-size: 5rem;
 }
-
 h2 {
 	font-size: 3rem;
 }
 h3 {
 	font-size: 2rem;
 }
+p {
+	font-size: 1.8rem;
+}
 a {
 	text-decoration: none;
 	color: black;
+	color: #4f4f4f;
+	font-size: 2rem;
 }
-
-button {
+.links button {
 	font-size: 1.5rem;
+	width: 10%;
 	padding: 1% 1%;
 	background-color: rgb(173, 190, 212);
 	border: black 1px solid;
 }
-
-button:hover{
+.links button:hover{
 	background-color: rgb(105, 140, 160);
 	font-weight: bold;
 }
-
 .image {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
-
 nav{
 	background-color: lightgray;
 	padding: 2%;
 }
-
 nav .links {
 	display: flex;
 	justify-content: flex-start;
@@ -92,7 +90,6 @@ nav .links {
 	padding-bottom: 2%;
 	padding-left: 2%
 }
-
 #about {
 	display: flex;
 	justify-content: flex-start;
@@ -101,25 +98,22 @@ nav .links {
 	margin-left: 1%;
 	width: 100%;
 }
-
 .right {
 	width: 50%;
 	margin-left: 10%;
 	text-align: left;
 }
-
 .right button {
 	margin: 5% 0;
 	padding: 2%;
 }
-
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
+	width: 100%;
 }
-
 .footer {
 	display: flex;
 	flex-direction: column;
@@ -130,8 +124,55 @@ nav .links {
 	margin: 2%;
 	padding: 2%;
 }
-
 .footer button {
 	margin-top: 2%;
 	padding: 2% 3%;
 }
+/* media queries */
+@media (max-width: 800px) {
+	nav{
+		margin-bottom: 10%;
+	}
+	.container {
+		margin-top: 10%;
+	}
+	.image {
+		padding: 0.25%;
+	}
+}
+@media (max-width: 500px) {
+	nav {
+		background-color: #fff;
+		margin-bottom: 1%;
+	}
+	nav h1{
+		text-align: center;
+		margin-bottom: 1%;
+	}
+	nav .links{
+		flex-direction: column;
+		justify-content: center;
+		width: 30%;
+		margin: auto;
+	}
+	.links button {
+		margin: 1% 0;
+		padding: 6%;
+		width: 80%;
+	}
+	#about{
+		flex-direction: column;
+		margin-bottom: 45%;
+	
+	#about .right{
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	.right button{
+		margin: 2%
+	}
+	.container .image {
+		margin: 5% 0;
+	}
+} 
